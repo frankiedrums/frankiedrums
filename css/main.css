@@ -190,6 +190,8 @@ a.glyph.social {
   display:    -moz-box;
   display: -ms-flexbox;
   display:         flex;
+  -ms-flex-pack: center;
+  -ms-flex-align: center;
   min-height: 200px;
   max-width: 300px;
   width: 100%;
@@ -200,6 +202,14 @@ a.glyph.social {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+     -moz-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+     -moz-box-align: center;
+          align-items: center;
 }
 
 .container-grid.social-box {
@@ -288,6 +298,8 @@ a.glyph.social {
 }
 
 .html-element.sheet {
+  margin-right: 0;
+  margin-left: -26px;
   width: 100%;
 
   -webkit-align-self: stretch;
