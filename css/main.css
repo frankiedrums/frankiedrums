@@ -307,6 +307,11 @@ a.glyph.social {
           align-self: stretch;
 }
 
+div.responsive-picture.picture-1 {
+  max-width: 100px;
+  box-shadow: none;
+}
+
 a.glyph.social:hover {
   color: #cdcdcd;
   text-decoration: none;
