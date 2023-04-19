@@ -234,6 +234,12 @@ a.glyph.social {
   background-blend-mode: normal;
 }
 
+a.responsive-picture.picture-link-1 {
+  margin-top: -4px;
+  margin-left: 2px;
+  max-width: 32px;
+}
+
 a.glyph.social:hover {
   color: #cdcdcd;
   text-decoration: none;
