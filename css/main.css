@@ -33,16 +33,17 @@ body.body-1 {
   -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
-  -ms-flex-pack: center;
+  -ms-flex-pack: end;
   -ms-flex-align: start;
   width: 100%;
   height: auto;
-  background-image: url('../images/me.jpg');
+  background-color: #000;
+  background-image: none;
   background-attachment: scroll;
-  background-position: center center;
+  background-position: left top;
   background-clip: border-box;
   background-origin: padding-box;
-  background-size: cover;
+  background-size: 0 0;
   background-repeat: no-repeat;
 
   -webkit-flex-wrap: nowrap;
@@ -52,15 +53,18 @@ body.body-1 {
   -webkit-align-items: flex-start;
      -moz-box-align: start;
           align-items: flex-start;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-     -moz-box-pack: center;
-          justify-content: center;
+  -webkit-box-pack: end;
+  -webkit-justify-content: flex-end;
+     -moz-box-pack: end;
+          justify-content: flex-end;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
      -moz-box-orient: vertical;
      -moz-box-direction: normal;
   background-blend-mode: normal;
+  -webkit-align-content: stretch;
+  -ms-flex-line-pack: stretch;
+          align-content: stretch;
 }
 
 div.responsive-picture.picture-1 {
@@ -148,7 +152,7 @@ a.glyph.social {
   -ms-flex-align: center;
   margin-right: auto;
   margin-left: auto;
-  padding-bottom: 500px;
+  padding-bottom: 200px;
   max-width: 800px;
   width: 100%;
   background-image: none;
@@ -197,6 +201,8 @@ a.glyph.social {
 }
 
 .container-grid.overlay {
+  position: relative;
+  z-index: 1000;
   display: -webkit-box;
   display: -webkit-flex;
   display:    -moz-box;
@@ -207,7 +213,9 @@ a.glyph.social {
           flex-direction: column;
   -ms-flex-pack: center;
   -ms-flex-align: center;
+  padding-bottom: 200px;
   width: 100%;
+  height: 100%;
   background-image: -webkit-linear-gradient(top, rgba(0, 0, 0, 0) 72%, rgba(0, 0, 0, 1) 100%);
   background-image:    -moz-linear-gradient(top, rgba(0, 0, 0, 0) 72%, rgba(0, 0, 0, 1) 100%);
   background-image:      -o-linear-gradient(top, rgba(0, 0, 0, 0) 72%, rgba(0, 0, 0, 1) 100%);
@@ -232,6 +240,9 @@ a.glyph.social {
      -moz-box-pack: center;
           justify-content: center;
   background-blend-mode: normal;
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+          align-self: stretch;
 }
 
 a.responsive-picture.picture-link-1 {
